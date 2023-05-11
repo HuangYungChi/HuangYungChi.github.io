@@ -9,7 +9,7 @@ let okbtn=document.querySelector("#okBtn");
 let modal=document.querySelector("#modal");
 let prizeContent = document.getElementById("dialog_content");
 btn.addEventListener("click", function(){
-    modal.showModal();
+    setTimeout(function(){modal.showModal();}, 1500);
 });
 okbtn.addEventListener("click", function(){
     modal.close();
