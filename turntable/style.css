@@ -1,0 +1,195 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/-background-image_401909818.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.text{
+    position: relative;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 10%;
+}
+.container{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #f7c894;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    overflow: hidden;
+    align-items: center;
+    border: 20px solid #ffbd72;
+    margin:0 auto;
+    margin-top: 10%;
+    
+}
+.turntable{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 2s ease-in-out;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.fan-blade{
+    position: absolute;
+    width: 100px;
+    height: 50%;
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+    -webkit-clip-path: -webkit-polygon(50% 100%, 0% 0%, 100% 0%);
+    transform-origin: 50% 100%;
+}
+
+.container .fan-blade:nth-child(1){
+    transform: rotate(60deg);
+}
+    .container .fan-blade:nth-child(2){
+        transform: rotate(120deg);
+    }
+    .container .fan-blade:nth-child(3){
+        transform: rotate(180deg);
+    }
+    .container .fan-blade:nth-child(4){
+        transform: rotate(240deg);
+    }
+    .container .fan-blade:nth-child(5){
+        transform: rotate(300deg);
+    }
+    .container .fan-blade:nth-child(6){
+        transform: rotate(360deg);
+    }
+
+    .container .fan-blade:nth-child(odd){
+        background-color: #f7c894;
+    }
+    .container .fan-blade:nth-child(even){
+        background-color: #ffebd4;
+    }
+
+.prize{
+    position: absolute;
+    width: 100px;
+    height: 50%;
+    display: flex;
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+    -webkit-clip-path: -webkit-polygon(50% 100%, 0% 0%, 100% 0%);
+    transform-origin: 50% 100%;
+}
+
+.prize-child{
+    position: relative;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+
+.prize:nth-child(1){
+    transform: rotate(60deg);
+}
+    .prize:nth-child(2){
+        transform: rotate(120deg);
+    }
+    .prize:nth-child(3){
+        transform: rotate(180deg);
+    }
+    .prize:nth-child(4){
+        transform: rotate(240deg);
+    }
+    .prize:nth-child(5){
+        transform: rotate(300deg);
+    }
+    .prize:nth-child(6){
+        transform: rotate(360deg);
+    }
+
+.giftbox{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    line-height: 80px;  
+    text-align: center;
+    position: absolute;
+}
+.modal {
+    position: absolute;		
+    width: 100%;
+    height: 100%;
+    background: #6a6a6aa6;			
+}
+
+.dialog {		
+    position: absolute;
+    height: 40vh;
+    /* 將對話框水平置中。 */
+    left: 50%;	
+    transform: translate(-50%, 50%);			
+    opacity: 100;
+    width: 90vw;
+    background: white;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .dialog_content {
+    background: white;
+    height: 30vh;
+    line-height: 30vh;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .buttons {
+    /* 加上這兩個CSS，可以讓button移動到對話框下方。 */
+    position: absolute;
+    height: 10vh;
+    width: 90vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .okBtn {
+    display: inline-block;
+    background: #092b68b3;
+    color: #ffffffeb;		    
+    border-radius: 8px;
+    border: 1px solid white;
+    padding: 10px 12px;
+    cursor: pointer;
+  }
