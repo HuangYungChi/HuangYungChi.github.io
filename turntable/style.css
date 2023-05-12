@@ -161,11 +161,12 @@ body{
     /* 將對話框水平置中。 */
     left: 50%;	
     transform: translate(-50%, 50%);			
-    opacity: 100;
+    opacity: 0;
     width: 90vw;
     background: white;
     box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    transition: .2s ease-in-out;
   }
   
   .dialog_content {
