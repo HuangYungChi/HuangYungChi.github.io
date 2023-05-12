@@ -3,16 +3,21 @@ function drawPrize(){
     var rnd = Math.floor(Math.random()*50+50)
     var turntable = document.getElementById('turntable')
     turntable.style.transform = 'rotate('+rnd*60+'deg)'
+    
 }
 let btn=document.querySelector("#btn");
 let okbtn=document.querySelector("#okBtn");
 let modal=document.querySelector("#modal");
+let dialog=document.getElementById("dialog");
 let prizeContent = document.getElementById("dialog_content");
 btn.addEventListener("click", function(){
     setTimeout(function(){modal.showModal();}, 1500);
+    setTimeout(function(){dialog.style.opacity = '100';}, 1500);
+    
 });
 okbtn.addEventListener("click", function(){
     modal.close();
+    dialog.style.opacity = 0;
 });
 //.fan-blade設定尺寸
 let $ = function(selector){
@@ -36,7 +41,6 @@ function Prize(){
     const prizes = ['一等獎','二等獎','三等獎','再接再厲']
     var probability = [0.02, 0.05, 0.07, 0.86]
     var final = Math.floor(Math.random()*100)
-    console.log("顯示modal")
     if(final <= 2)
     {
         prizeContent.textContent = "恭喜獲得" + prizes[0]
