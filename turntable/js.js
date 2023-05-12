@@ -12,7 +12,7 @@ let dialog=document.getElementById("dialog");
 let prizeContent = document.getElementById("dialog_content");
 btn.addEventListener("click", function(){
     setTimeout(function(){modal.showModal();}, 1500);
-    setTimeout(function(){dialog.style.opacity = '100';}, 1500);
+    setTimeout(function(){dialog.style.opacity = 100;}, 1500);
     
 });
 okbtn.addEventListener("click", function(){
