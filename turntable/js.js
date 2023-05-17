@@ -8,7 +8,7 @@ let prizeContent = document.getElementById("dialog_content");//設定得獎文�
 
 let prizes = ['一等獎','二等獎','三等獎','再接再厲'];//獎項名稱
 let probability = [0.1, 0.15, 0.2, 0.55];//獎項機率
-let prizeImgSrc = ['/gift1.svg', '/gift2.svg', '/gift3.svg', '/cryingface.svg'];//獎項圖片路徑
+let prizeImgSrc = ['https://huangyungchi.github.io/turntable/gift1.svg', 'https://huangyungchi.github.io/turntable/gift2.svg', 'https://huangyungchi.github.io/turntable/gift3.svg', 'https://huangyungchi.github.io/turntable/cryingface.svg'];//獎項圖片路徑
 
 let num = 6;//設定轉盤禮物盒數量
 let diameter = 300;
