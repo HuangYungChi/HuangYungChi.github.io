@@ -1,0 +1,110 @@
+html{
+    height: 100%;
+    margin: 0 auto;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/-background-image_401909818.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+.text{
+    position: relative;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 10%;
+}
+.container{
+    position: relative;
+    background-image: url('/Group1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10%;
+
+}
+.gift{
+    width: 30vw;
+    height: 30vw;
+    overflow: hidden;
+    -moz-box-sizing: border-box; /*Firefox3.5+*/
+    -webkit-box-sizing: border-box; /*Safari3.2+*/
+    -o-box-sizing: border-box; /*Opera9.6*/
+    -ms-box-sizing: border-box; /*IE8*/
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto
+}
+
+img{
+    width: 90%;
+    height: 90%;
+}
+.modal {
+    position: absolute;		
+    width: 100vw;
+    height: 100%;
+    background: #6a6a6aa6;			
+}
+
+.dialog {		
+    position: absolute;
+    height: 40%;
+    width: 90%;
+    /* 將對話框水平置中。 */
+    left: 50%;	
+    transform: translate(-50%, 50%);			
+    opacity: 0;
+    background: white;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+    text-align:center
+  }
+  .dialog_img{
+    height: 60%;
+    width: 40%;
+    position: relative;
+    align-items: center;
+}
+  
+  .dialog_content {
+    display: flex;
+    background: white;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .buttons {
+    /* 加上這兩個CSS，可以讓button移動到對話框下方。 */
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .okBtn {
+    display: inline-block;
+    background: #092b68b3;
+    color: #ffffffeb;		    
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin: 0 auto;
+    cursor: pointer;
+  }

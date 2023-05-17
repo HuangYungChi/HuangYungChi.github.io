@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hanta">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>九宮格抽獎</title>
+</head>
+<body>
+    <div class="text">
+        GEOGAMES<br>
+        幸運轉盤遊戲
+    </div>
+    <div class="container">
+        <div id="gift1" class="gift" onclick="Show();Prize()">
+            <img src="/gift-removebg-preview.png" alt="">
+        </div>
+        <div id="gift2" class="gift" onclick="Show();Prize()">
+            <img src="/gift-removebg-preview.png" alt="">
+        </div>
+        <div id="gift3" class="gift" onclick="Show();Prize()">
+            <img src="/gift-removebg-preview.png" alt="">
+        </div>
+        <div id="gift4" class="gift" onclick="Show();Prize()">
+            <img src="/gift-removebg-preview.png" alt="">
+        </div>
+        <div id="gift5" class="gift" onclick="Show();Prize()">
+            <img src="/gift-removebg-preview.png" alt="">
+        </div>
+        <div id="gift6" class="gift" onclick="Show();Prize()">
+            <img src="/gift-removebg-preview.png" alt="">
+        </div>
+        <div id="gift7" class="gift" onclick="Show();Prize()">
+            <img src="/gift-removebg-preview.png" alt="">
+        </div>
+        <div id="gift8" class="gift" onclick="Show();Prize()">
+            <img src="/gift-removebg-preview.png" alt="">
+        </div>
+        <div id="gift9" class="gift" onclick="Show();Prize()">
+            <img src="/gift-removebg-preview.png" alt="">
+        </div>
+        
+    </div>
+    <div class="text">
+        選擇一個喜歡的禮物吧~
+    </div>
+
+    <dialog id="modal" class="modal">
+        <div id="dialog" class="dialog">
+            <img id="dialog_img" class="dialog_img" src="/" alt="">
+            <div id="dialog_content" class="dialog_content"></div>
+            <div class="buttons">			
+                <div id="okBtn" class="okBtn">確定</div>
+            </div>
+        </div>
+    </dialog>
+</body>
+<script src="main.js"></script>
+</html>
